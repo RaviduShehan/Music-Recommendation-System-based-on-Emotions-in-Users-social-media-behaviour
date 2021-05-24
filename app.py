@@ -26,10 +26,10 @@ from collections import Counter
 from random import randint
 
 #Twitter API credentials
-consumer_key = 'Qp4hH6xgMKjla17LGjMJf4z6C'
-consumer_code = 'a9bwmpwfAkLLCiP8Slmtq2JlpFAax1NJcmF1sVJ4ZM2rRgfHk2'
-access_token = '2905175149-PbaI3EY0ZMdpibDIXgVS9yOA7NUjcrJPeLJx60z'
-access_code = 'LW9tGNKTzt4KbReQ3LInTBMNHwWY6uDN0hMFJBtzQhvha'
+consumer_key = ''
+consumer_code = ''
+access_token = ''
+access_code = ''
 
 #Authentication of the Tweeter credentials
 authenticate = tweepy.OAuthHandler(consumer_key,consumer_code)
@@ -373,7 +373,7 @@ def sinhalaPredictions(tweetsStr):
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] ='ravidu'
+app.config['SECRET_KEY'] ='yourName'
 
 @app.route('/', methods=['GET' ,'POST'])
 def submit():
