@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<header id="home">
+ 
+    <div class="overlay">
+       
+        <div class="container">
+    <div>
+        <h2><span>{{userId}} is Feeling</span><br>{{emotion}}</h2>
+        <h2>Recommended song for {{userId}} is</h2><br><h1>{{recommendation}}</h1>
+                <h2><a href=" {{songLink}}">Click here to Play song </a></h2>
+
+
+              
+            </div>
+        </div>
+     
+    </div>
+</header>
+
+{% endblock %}
